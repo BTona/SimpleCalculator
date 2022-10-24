@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/solutiontv"
+        android:textSize="84dp"
+        android:textAlignment="textEnd"
+        android:layout_above="@+id/resulttv"
+        android:gravity="end" />
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/resulttv"
+        android:text="0"
+        android:textSize="108dp"
+        android:textAlignment="textEnd"
+        android:layout_above="@id/buttons_layout"
+        android:gravity="end" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttons_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn07"
+                android:text="7"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn08"
+                android:text="8"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn09"
+                android:text="9"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btnMul"
+                android:text="*" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn04"
+                android:text="4"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn05"
+                android:text="5"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn06"
+                android:text="6"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btnMin"
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn01"
+                android:text="1"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn02"
+                android:text="2"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btn03"
+                android:text="3"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btnDiv"
+                android:text="/"  />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:textSize="32dp"
+            android:id="@+id/btnCE"
+            android:text="CE"/>
+            <com.google.android.material.button.MaterialButton
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:textSize="32dp"
+            android:id="@+id/btn00"
+            android:text="0"/>
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:textSize="32dp"
+                android:id="@+id/btnDOT"
+                android:text="-"/>
+            <com.google.android.material.button.MaterialButton
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:textSize="32dp"
+            android:id="@+id/btnAdd"
+            android:text="+" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center"
+            android:textSize="32dp"
+            android:id="@+id/btnEQ"
+            android:text="="/>
+    </LinearLayout>
+
+</RelativeLayout>
